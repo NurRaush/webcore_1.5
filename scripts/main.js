@@ -19,7 +19,7 @@ function swiperMode() {
             slidesPerView: 'auto',
             spaceBetween: 16,
         });        }
-      } else if (init) {
+    } else if (init) {
         swiper.destroy();
         init = false;
       }
