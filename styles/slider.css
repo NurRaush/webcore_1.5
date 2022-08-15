@@ -1,0 +1,142 @@
+.slider{
+    background-color: #F2F2F2;
+}
+.page-main__slider{
+    padding-bottom: 34px;
+}
+.slider__swiper{
+    min-height:196px;
+}
+.swiper__header{
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding:16px;
+}
+@media (min-width:768px) {
+    .swiper__header{
+        padding-left:24px;
+    }
+}
+@media (min-width:768px) {
+    .swiper__header{
+        padding-left:32px;
+    }
+}
+
+.swiper__text{
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+.brand-slider__slide{
+    box-sizing: border-box;
+    width: 240px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    }
+@media (min-width:768px) {
+    .brand-slider__slide{
+        margin: 0 12px 16px 12px;
+        width: 224px;
+        flex-grow: 1;
+    }
+}
+@media (min-width:1120px) {
+    .brand-slider__slide{
+        margin: 0 16px 16px 16px;
+        width: 240px;
+        flex-grow: 1;
+    }
+}
+
+.show-more-button{
+    border: none;
+    background-color: #F2F2F2;;
+    height: 24px;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    white-space: nowrap;
+}
+.slider__show-more-button--show-all::before{
+    content: "";
+    display: none;
+    position: absolute;
+    left:24px;
+    background: url(../images/icons/expandreadmore-icon.svg) no-repeat center;
+    height:24px;
+    width:24px;
+    z-index: 1;
+}
+.slider__show-more-button--hide::before{
+    content: "";
+    background: url(../images/icons/hideicon.svg) no-repeat center;
+    height:24px;
+    width:24px;
+    display: none;
+    position: absolute;
+    left:24px;
+    z-index: 1;
+}
+
+.slider__show-more-button{
+    display: none;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+@media (min-width:768px) {
+    .slider__show-more-button{
+        display: block;
+    }
+    .slider__show-more-button--show-all::before{
+        display: block;
+    }
+    .slider__show-more-button--hide::before{
+        display: block;
+    }
+}
+
+.brand-slider__wrapper{
+    padding: 16px;
+    padding-bottom: 66px;
+}
+@media (min-width:768px) {   
+    .brand-slider__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        padding: 24px 12px 8px 12px;
+        justify-content: space-between;
+    }
+}
+@media (min-width:1120px) {   
+    .brand-slider__wrapper{
+        padding: 24px 16px 8px 16px;
+    }
+}
+
+.button{
+    display: block;
+    margin-left:auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('../images/icons/goIcon.svg') no-repeat center center;
+}
+
+.brand-slider__slide--visibility--hide{
+    display: none;
+}
