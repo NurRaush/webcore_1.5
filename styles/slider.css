@@ -48,14 +48,12 @@
     .brand-slider__slide{
         margin: 0 12px 16px 12px;
         width: 224px;
-        flex-grow: 1;
     }
 }
 @media (min-width:1120px) {
     .brand-slider__slide{
         margin: 0 16px 16px 16px;
         width: 240px;
-        flex-grow: 1;
     }
 }
 

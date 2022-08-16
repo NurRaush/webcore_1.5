@@ -35,7 +35,7 @@ function hideElements() {
         }
     }
     else if (SlidesHide) {
-        if (window.innerWidth < 1120) {
+        if (window.innerWidth < 1016) {
             for (let i = 6; i < brandsArray.length; i++) {
                 if (!brandsArray[i].classList.contains('brand-slider__slide--visibility--hide')) {
                     brandsArray[i].classList.add('brand-slider__slide--visibility--hide');
